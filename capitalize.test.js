@@ -5,5 +5,5 @@ test("luffy capitalize to Luffy", () => {
 });
 
 test("ZORO capitalize to Zoro", () => {
-  expect(capitalize("ZORO").toBe("Zoro"));
+  expect(capitalize("ZORO")).toBe("Zoro");
 });
