@@ -19,5 +19,5 @@ test("list with repeat number", () => {
 });
 
 test("empty array", () => {
-  expect(analyzeArray([2, 1, 1, 3, 3])).toMatch(/error/);
+  expect(analyzeArray([])).toMatch(/error/);
 });
