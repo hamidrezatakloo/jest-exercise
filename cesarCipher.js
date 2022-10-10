@@ -1,7 +1,8 @@
 const cesarCipher = (plaintext, key) => {
   const shift = (char) => {
-    let asciiCode = char.charCodeAt(0);
+    let asciiCode = char.charCodeAt(0) - 96;
     asciiCode = (asciiCode + key) % 26;
+    asciiCode += 96;
     return String.fromCharCode(asciiCode);
   };
   let cipher = "";
