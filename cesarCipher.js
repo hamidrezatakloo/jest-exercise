@@ -3,6 +3,7 @@ const cesarCipher = (plaintext, key) => {
     let asciiCode = char.charCodeAt(0) - 96;
     asciiCode = (asciiCode + key) % 26;
     asciiCode += 96;
+    if (asciiCode === 96) asciiCode = 122;
     return String.fromCharCode(asciiCode);
   };
   let cipher = "";
