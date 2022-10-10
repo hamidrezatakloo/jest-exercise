@@ -9,3 +9,7 @@ test("plaintext with white space ", () => {
 test("UpperCase plaintext ", () => {
   expect(cesarCipher("MISTSURY", 6)).toEqual("qmwxwyvc");
 });
+
+test("none alphabet character return same", () => {
+  expect(cesarCipher("MISTSURY", 6)).toEqual("qmwxwyvc");
+});
