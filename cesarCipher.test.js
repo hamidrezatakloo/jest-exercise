@@ -13,5 +13,5 @@ test("UpperCase plaintext return lowerCase cipher", () => {
 });
 
 test("none alphabet character return same", () => {
-  expect(cesarCipher("MISTSURY", 6)).toEqual("qmwxwyvc");
+  expect(cesarCipher("%@$@", 6)).toEqual("%@$@");
 });
