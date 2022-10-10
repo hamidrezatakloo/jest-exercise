@@ -1,3 +1,5 @@
+import analyzeArray from "./analyzeArray";
+
 test("min,max,avg,length of 1-10", () => {
   expect(analyzeArray([2, 1, 3, 5, 4, 10, 8, 9, 6, 7])).toEqual({
     average: 5,
