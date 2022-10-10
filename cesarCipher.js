@@ -16,3 +16,5 @@ const cesarCipher = (plaintext, key) => {
 
   return cipher;
 };
+
+export default cesarCipher;
