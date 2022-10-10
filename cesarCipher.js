@@ -12,7 +12,7 @@ const cesarCipher = (plaintext, key) => {
     const asci = c.charCodeAt(0);
 
     if (asci > 96 && asci < 123) cipher += shift(c);
-    else if (asci > 65 && asci < 90) cipher += shift(c.toLowerCase());
+    else if (asci > 64 && asci < 91) cipher += shift(c.toLowerCase());
     else cipher += c;
   });
 
